@@ -1,0 +1,221 @@
+/* Estilos para a imagem do usuário */
+.rounded-circle.img-thumbnail {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    float: left; /* Note: Bootstrap classes usually handle positioning better than 'float', consider removing this if it causes layout issues with Bootstrap */
+}
+img src {
+    border-radius: 50%; /* Garante que a imagem seja circular */
+    border: 1px solid #ddd; /* Adiciona uma borda leve */
+    padding: 5px; /* Adiciona um pouco de espaço entre a borda e a imagem */
+    float: left;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    color: #FFF;
+}
+
+card border-0 shadow {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.insta-link, .site-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Deixa a mudança de cor suave */
+}
+
+/* --- CONFIGURAÇÃO INSTAGRAM --- */
+.insta-link {
+    background-color: #E1306C; /* Rosa padrão Instagram */
+    color: white;
+}
+
+.insta-link:hover {
+    background-color: #B02555; /* Um rosa mais escuro ao passar o mouse */
+    color: #FFF;
+}
+
+/* --- CONFIGURAÇÃO SITE (Ex: Azul Profissional) --- */
+.site-link {
+    background-color: #0056b3; 
+    color: white;
+}
+
+.site-link:hover {
+    background-color: #003d7a; /* Azul mais escuro ao passar o mouse */
+    color: #FFF;
+}
+
+/* Container que segura os ícones */
+.floating-social {
+    position: fixed;
+    bottom: 20px;       /* Distância do fundo */
+    right: 20px;        /* Distância da direita */
+    display: flex;
+    flex-direction: column; /* Empilha um em cima do outro */
+    gap: 15px;          /* Espaço entre eles */
+    z-index: 9999;      /* Garante que fiquem na frente de tudo */
+}
+
+/* Estilo comum para os botões flutuantes */
+.floating-social a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+/* Cor específica do Instagram (Gradient) */
+.insta-float {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+/* Cor específica do WhatsApp */
+.whatsapp-float {
+    background-color: #25d366;
+}
+
+/* Efeito de aumentar ao passar o mouse */
+.floating-social a:hover {
+    transform: scale(1.1); /* Dá um leve "pulo" para frente */
+}
+
+.insta-float:hover {
+    background-color: #b02555;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Faz o fundo ficar redondo */
+    text-decoration: none;
+    font-size: 20px; /* Tamanho do ícone */
+    color: #FFF;
+    transition: 0.3s;
+}
+
+/* Cores específicas */
+.insta-link {
+    background-color: #E1306C;
+}
+
+.site-link {
+    background-color: #0056b3;
+}
+
+/* Efeito Hover igual ao seu do WhatsApp */
+.insta-link:hover {
+    background-color: #B02555;
+    color: #FFF;
+}
+
+.site-link:hover {
+    background-color: #003d7a;
+    color: #FFF;
+}
+
+/* Estilo base para equalizar todos os ícones */
+.nav-social-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white !important; /* Força o ícone a ser branco */
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+/* Cores específicas de cada marca */
+.insta {
+    background: #E1306C;
+}
+
+.site {
+    background: #0056b3;
+}
+
+.whats {
+    background: #25d366;
+}
+
+/* Remove qualquer fundo e define o tamanho */
+.icon-only-link {
+    text-decoration: none;
+    background-color: transparent !important; /* Remove o fundo colorido */
+    border: none;
+    font-size: 24px; /* Aumenta um pouco o ícone já que não tem fundo */
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Aplica a cor APENAS no desenho do ícone */
+.insta-txt { color: #E1306C !important; }
+.site-txt  { color: #0056b3 !important; }
+.whats-txt { color: #25d366 !important; }
+
+/* Efeito de hover (opcional: o ícone brilha ou cresce) */
+.icon-only-link:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+
+@media (max-width: 768px) {
+    .box {
+        flex: 1 1 100%;
+    }
+}
